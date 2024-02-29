@@ -1,0 +1,41 @@
+expresiones_lambda.txt
+
+Una expresión lambda representa a un método o
+función anónima
+
+private int sumar(int a, int b){
+    return a + b;
+}
+
+(int a, int b){
+    return a + b;
+}
+No tiene nombre
+
+Sintaxis de una expresión lambda
+(listaParámetros)-> {instrucciones}
+
+(int a, int b)->{return a + b;}
+
+(a, b) -> {return a + b;}
+
+(a, b) -> a + b
+__________________________________________
+(a) -> a * 2
+a -> a * 2
+
+valor -> System.out.printf("%d ", valor)
+
+num -> num > 60
+
+() -> System.out.println("Bienvenidos a los lambdas");
+
+
+
+
+
+
+
+
+
+
