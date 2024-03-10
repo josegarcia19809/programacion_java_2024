@@ -16,7 +16,7 @@ public class LenguajesProgramacion {
         imprimirLinea();
 
         // Forma más simplificada
-        String[] arregloMasLenguajes={"JavaScript", "C", "C#", "Swift", "Kotlin"};
+        String[] arregloMasLenguajes = {"JavaScript", "C", "C#", "Swift", "Kotlin"};
         Stream.of(arregloMasLenguajes)
                 .forEach(System.out::println);
         imprimirLinea();
