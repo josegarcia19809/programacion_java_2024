@@ -26,7 +26,7 @@ public class ArrayListAmigos {
 
         // Imprimir el ArrayList en pantalla
         System.out.println("Lista de amigos: ");
-        for (String amigo: amigos){
+        for (String amigo : amigos) {
             System.out.println(amigo);
         }
     }
