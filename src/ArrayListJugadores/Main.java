@@ -4,8 +4,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        // Crear un ArrayList que se llame equipo para
-        // guardar Jugadores
+        // Crear un ArrayList que se llame equipo para guardar Jugadores
         ArrayList<Jugador> equipo = new ArrayList<>();
 
         // Agregar un jugador
@@ -24,7 +23,7 @@ public class Main {
         System.out.println("----------------------------");
         // for mejorado
         System.out.println("Jugadores:");
-        for (Jugador aux: equipo){
+        for (Jugador aux : equipo) {
             System.out.println(aux.toString());
         }
     }
