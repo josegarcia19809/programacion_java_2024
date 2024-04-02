@@ -8,8 +8,14 @@ import static java.util.Collections.sort;
 public class Main {
     private static ArrayList<String> listaFrutas = new ArrayList<>();
     private static Scanner entrada = new Scanner(System.in);
+    static ArchivoCadenas archivo;
 
     public static void main(String[] args) {
+        archivo = new ArchivoCadenas("frutas.txt");
+        listaFrutas = archivo.LeerArchivo();
+        sort(listaFrutas);
+        mostrarListaFrutas();
+
         int opcion, indice;
         String nombreFruta;
         do {
@@ -20,6 +26,7 @@ public class Main {
                     System.out.print("Dame el nombre de la fruta a ingresar: ");
                     nombreFruta = entrada.next();
                     meterFruta(nombreFruta);
+                    archivo.EscribirEnArchivo(listaFrutas);
                     sort(listaFrutas);
                     mostrarListaFrutas();
                     break;
@@ -45,6 +52,7 @@ public class Main {
                     System.out.print("Dame el nombre de la fruta a borrar: ");
                     nombreFruta = entrada.next();
                     borrarFruta(nombreFruta);
+                    archivo.EscribirEnArchivo(listaFrutas);
 
                     break;
                 case 5:
@@ -53,6 +61,7 @@ public class Main {
                     System.out.print("Dame el nombre de la fruta a cambiar: ");
                     nombreFruta = entrada.next();
                     cambiarFruta(nombreFruta);
+                    archivo.EscribirEnArchivo(listaFrutas);
                     break;
                 case 6:
                     System.out.println("Saliendo...");
@@ -78,7 +87,7 @@ public class Main {
     }
 
     private static void meterFruta(String nombreFruta) {
-        listaFrutas.add(nombreFruta);
+        listaFrutas.add(nombreFruta.toUpperCase());
     }
 
     private static void mostrarListaFrutas() {
