@@ -16,7 +16,7 @@ public class OperacionesPersonaPrueba {
         System.out.println("Apellidos de todos los 'Luis'");
         System.out.printf("%15s%n", "Apellidos");
         imprimirSublista(operaciones.obtenerApellidoPersonasLuis());
-        
+
         System.out.println("-".repeat(100));
         System.out.println("Todas las personas mayores de 18 años y menores de 30");
         imprimirLista(operaciones.obtenerEntre19Y29());
