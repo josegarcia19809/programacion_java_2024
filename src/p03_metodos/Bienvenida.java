@@ -6,7 +6,6 @@ public class Bienvenida {
     }
 
     public static void mostrarMensaje(){
-        System.out.println("Bienvenidos al " +
-                "TESSFP 🦌");
+        System.out.println("Bienvenidos al TESSFP 🦌");
     }
 }
