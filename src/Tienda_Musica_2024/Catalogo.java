@@ -8,11 +8,12 @@ public class Catalogo {
     public Catalogo() {
         listaCanciones = new ArrayList<>();
         listaCanciones.add(new Cancion(12, "100 años", "Carlos Rivera y Maluma",
-                "Pop", "Sencillo", 25.0, "cien.jpg"));
+                "Pop", "Sencillo", 25.0, "cien.jpg",
+                "https://youtu.be/Pw4y-Q7moGY?si=kpxuFo5LgDkwaSjL"));
         listaCanciones.add(new Cancion(32, "Amor prohibido", "Selena",
-                "Pop", "Amor prohibido", 10, "amor.jpg"));
+                "Pop", "Amor prohibido", 10, "amor.jpg", "enlace"));
         listaCanciones.add(new Cancion(3, "Destino o casualidad", "Melendi y HA-ASH",
-                "Pop", "Quitate las gafas", 22, "destino.jpg"));
+                "Pop", "Quitate las gafas", 22, "destino.jpg", "enlace"));
     }
 
     public ArrayList<Cancion> getListaCanciones() {
@@ -27,14 +28,13 @@ public class Catalogo {
         listaCanciones.add(nuevaCancion);
     }
 
-    public void verCatalogo() {
-        System.out.printf("%-8s|%-30s|%-30s|%-8s\n",
-                "Clave", "Nombre canción", "Artista", "Precio");
-        System.out.println("-".repeat(80));
+    public Cancion buscarPorClave(int clave) {
         for (Cancion cancion : listaCanciones) {
-            System.out.printf("%-8d|%-30s|%-30s|$%-6.2f\n",
-                    cancion.getClave(), cancion.getNombreCancion(),
-                    cancion.getNombreCantante(), cancion.getPrecio());
+            if (cancion.getClave() == clave) {
+                return cancion;
+            }
         }
+        return null;
     }
 }
+

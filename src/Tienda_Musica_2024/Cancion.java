@@ -8,9 +8,10 @@ public class Cancion {
     private String album;
     private double precio;
     private String portada;
+    private String enlace;
 
-    public Cancion(int clave, String nombreCancion, String nombreCantante,
-                   String genero, String album, double precio, String portada) {
+    public Cancion(int clave, String nombreCancion, String nombreCantante, String genero,
+                   String album, double precio, String portada, String enlace) {
         this.clave = clave;
         this.nombreCancion = nombreCancion;
         this.nombreCantante = nombreCantante;
@@ -18,6 +19,7 @@ public class Cancion {
         this.album = album;
         this.precio = precio;
         this.portada = portada;
+        this.enlace = enlace;
     }
 
     public int getClave() {
@@ -74,5 +76,13 @@ public class Cancion {
 
     public void setPortada(String portada) {
         this.portada = portada;
+    }
+
+    public String getEnlace() {
+        return enlace;
+    }
+
+    public void setEnlace(String enlace) {
+        this.enlace = enlace;
     }
 }
