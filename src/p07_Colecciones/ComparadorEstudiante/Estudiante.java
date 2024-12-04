@@ -1,0 +1,47 @@
+package p07_Colecciones.ComparadorEstudiante;
+
+public class Estudiante {
+    private String nombre;
+    private String apellido;
+    private float calificacion;
+    // Constructor, getters y setters y toString
+
+    public Estudiante(String nombre, String apellido, float calificacion) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.calificacion = calificacion;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public float getCalificacion() {
+        return calificacion;
+    }
+
+    public void setCalificacion(float calificacion) {
+        this.calificacion = calificacion;
+    }
+
+    @Override
+    public String toString() {
+        return "Estudiante{" +
+                "nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", calificacion=" + calificacion +
+                '}';
+    }
+}
