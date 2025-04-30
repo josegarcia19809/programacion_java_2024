@@ -8,7 +8,7 @@ public class AreaRectangulo {
     public static double obtenerLargo() {
         double largo = 0;
         while (largo <= 0) {
-            System.out.print("Dame largura del rectángulo: ");
+            System.out.print("Dime cuánto mide de largo el rectángulo: ");
             largo = entrada.nextDouble();
         }
         return largo;
@@ -17,7 +17,7 @@ public class AreaRectangulo {
     public static double obtenerAncho() {
         double ancho = 0;
         while (ancho <= 0) {
-            System.out.print("Dame anchura del rectángulo: ");
+            System.out.print("Dime cuánto mide de ancho el rectángulo: ");
             ancho = entrada.nextDouble();
         }
         return ancho;
@@ -42,6 +42,4 @@ public class AreaRectangulo {
 
         mostrarDatos(larguraRectangulo, anchuraRectangulo, areaRectangulo);
     }
-
-
 }
