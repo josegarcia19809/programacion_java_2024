@@ -1,4 +1,4 @@
-MANGO
-MANZANA
-MELON
-PLATANO
+Manzana
+Plátano
+Fresa
+Sandía
