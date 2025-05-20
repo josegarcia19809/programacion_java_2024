@@ -63,4 +63,24 @@ public class Empleador {
                 this.correo, this.contrasenaHash, this.empresa);
         return salida;
     }
+
+    // Método para guardar en archivo (separado por '|')
+    public String formatoArchivo() {
+        return id + "|" + nombre + "|" + correo + "|" + contrasenaHash + "|" + empresa;
+    }
+
+    // Método estático para crear un empleador a partir de una línea del archivo
+    public static Empleador desdeArchivo(String linea) {
+        String[] partes = linea.split("\\|");
+        if (partes.length != 5) {
+            throw new IllegalArgumentException("Línea de archivo inválida: " + linea);
+        }
+        int id = Integer.parseInt(partes[0]);
+        String nombre = partes[1];
+        String correo = partes[2];
+        String contrasenaHash = partes[3];
+        String empresa = partes[4];
+
+        return new Empleador(id, nombre, correo, contrasenaHash, empresa);
+    }
 }
