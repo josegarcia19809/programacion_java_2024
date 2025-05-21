@@ -1,0 +1,5 @@
+Lápiz, 5.00
+Cuaderno, 25.50
+Regla, 10.00
+Mochila, 350.00
+Goma, 1.00
