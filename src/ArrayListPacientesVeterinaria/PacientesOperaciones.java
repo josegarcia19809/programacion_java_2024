@@ -1,19 +1,68 @@
 package ArrayListPacientesVeterinaria;
 
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class PacientesOperaciones {
     ArrayList<PacienteVeterinario> pacientes = new ArrayList<>();
+    private String nombreArchivo;
 
-    public PacientesOperaciones() {
-        // 🔹 Datos precargados
-        pacientes.add(new PacienteVeterinario(101, "Max", "Perro", 5, "Alergia en la piel"));
-        pacientes.add(new PacienteVeterinario(102, "Luna", "Gato", 3, "Infección urinaria"));
-        pacientes.add(new PacienteVeterinario(103, "Rocky", "Perro", 8, "Problemas dentales"));
-        pacientes.add(new PacienteVeterinario(104, "Pelusa", "Conejo", 2, "Parásitos intestinales"));
-        pacientes.add(new PacienteVeterinario(105, "Tigre", "Gato", 6, "Fractura en la pata"));
-        pacientes.add(new PacienteVeterinario(106, "Nube", "Perro", 1, "Vacunación pendiente"));
-        pacientes.add(new PacienteVeterinario(107, "Copito", "Conejo", 4, "Problemas respiratorios"));
+    public PacientesOperaciones(String nombreArchivo) {
+        this.nombreArchivo = nombreArchivo;
+        crearArchivoSiNoExiste(nombreArchivo);
+        cargarPacientesDesdeArchivo();
+    }
+
+    private void crearArchivoSiNoExiste(String nombreArchivo) {
+        File archivo = new File(nombreArchivo);
+        if (!archivo.exists()) {
+            try {
+                // Crear archivo vacío
+                PrintWriter nuevoArchivo = new PrintWriter(archivo);
+                nuevoArchivo.close();
+            } catch (IOException e) {
+                System.err.println("No se pudo crear el archivo");
+                System.exit(1);
+            }
+        }
+    }
+
+    public void cargarPacientesDesdeArchivo() {
+        pacientes.clear();
+        try {
+            File archivo = new File(nombreArchivo);
+            if (!archivo.exists()) {
+                return;
+            }
+            Scanner lector = new Scanner(archivo);
+            while (lector.hasNextLine()) {
+                String linea = lector.nextLine();
+                PacienteVeterinario paciente = PacienteVeterinario.desdeArchivo(linea);
+                pacientes.add(paciente);
+            }
+        } catch (Exception e) {
+            System.out.println("Error al leer el archivo " +
+                    e.getMessage());
+        }
+    }
+
+    public void guardarPacientesEnArchivo() {
+        try {
+            File archivo = new File(nombreArchivo);
+            PrintWriter escritor = new PrintWriter(archivo);
+
+            for (PacienteVeterinario paciente : pacientes) {
+                escritor.println(paciente.formatoArchivo());
+            }
+            escritor.close();
+
+        } catch (Exception e) {
+            System.out.println("Error al guardar el archivo: " +
+                    e.getMessage());
+        }
     }
 
     public ArrayList<PacienteVeterinario> getPacientes() {
