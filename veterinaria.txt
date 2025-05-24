@@ -1,1 +1,2 @@
 101|Max|Perro|5|Pata lastimada
+102|Luna|Gato|5|Infección urinaria

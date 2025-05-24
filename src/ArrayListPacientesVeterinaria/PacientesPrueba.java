@@ -34,7 +34,7 @@ public class PacientesPrueba {
 
     public static void imprimirLinea() {
         System.out.println();
-        System.out.println("-".repeat(50));
+        System.out.println("-".repeat(100));
     }
 
 
@@ -52,6 +52,9 @@ public class PacientesPrueba {
                 case 2:
                     veterinaria.mostrarTodosLosPacientes();
                     break;
+                case 6:
+                    System.out.println("Saliendo...");
+                    break;
                 default:
                     System.out.println("Opción no valida");
                     break;
@@ -66,8 +69,7 @@ public class PacientesPrueba {
         System.out.println("2. Mostrar pacientes");
         System.out.println("3. Pacientes por especie");
         System.out.println("4. Buscar pacientes por nombre");
-        System.out.println("5. Listar pacientes con edad mayor o igual a " +
-                "cierto valor");
+        System.out.println("5. Listar pacientes con edad mayor o igual a cierto valor");
         System.out.println("6. Salir");
         System.out.print("Opción: ");
     }

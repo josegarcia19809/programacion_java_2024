@@ -65,8 +65,7 @@ public class PacienteVeterinario {
 
     // Método para guardar en archivo (separado por "|")
     public String formatoArchivo() {
-        return idPaciente + "|" + nombre + "|" + especie
-                + "|" + edad + "|" + diagnostico;
+        return idPaciente + "|" + nombre + "|" + especie + "|" + edad + "|" + diagnostico;
     }
 
     // Método estático para crear un paciente a partir de

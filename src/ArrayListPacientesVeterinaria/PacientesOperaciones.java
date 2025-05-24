@@ -65,29 +65,23 @@ public class PacientesOperaciones {
         }
     }
 
-    public ArrayList<PacienteVeterinario> getPacientes() {
-        return pacientes;
-    }
-
-    public void setPacientes(ArrayList<PacienteVeterinario> pacientes) {
-        this.pacientes = pacientes;
-    }
-
     public void ingresarPaciente(PacienteVeterinario nuevoPaciente) {
         pacientes.add(nuevoPaciente);
     }
 
+    private void imprimirLineaPuntos() {
+        System.out.println();
+        System.out.println(".".repeat(100));
+    }
+
     public void mostrarPacientes(ArrayList<PacienteVeterinario> listaPacientes) {
-        System.out.println("-".repeat(100));
+        imprimirLineaPuntos();
         System.out.println("Pacientes");
-        System.out.println("-".repeat(20));
+        System.out.printf("%6s %20s %20s %6s %25s",
+                "id", "Nombre", "Especie", "Edad", "Diagnóstico");
+        imprimirLineaPuntos();
         for (int i = 0; i < listaPacientes.size(); i++) {
-            System.out.println("id: " + listaPacientes.get(i).getIdPaciente());
-            System.out.println("Nombre: " + listaPacientes.get(i).getNombre());
-            System.out.println("Especie: " + listaPacientes.get(i).getEspecie());
-            System.out.println("Edad: " + listaPacientes.get(i).getEdad());
-            System.out.println("Diagnóstico: " + listaPacientes.get(i).getDiagnostico());
-            System.out.println();
+            System.out.println(listaPacientes.get(i).toString());
         }
     }
 
