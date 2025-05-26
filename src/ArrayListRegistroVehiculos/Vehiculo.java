@@ -66,4 +66,26 @@ public class Vehiculo {
                 this.id, this.marca, this.modelo, this.anio, this.precio);
         return salida;
     }
+
+    // Método para guardar en archivo (separado por '|')
+    public String formatoArchivo() {
+        return id + "|" + marca + "|" + modelo + "|" +
+                anio + "|" + precio;
+    }
+
+    // Método estático para crear un Vehiculo a partir
+    // de una línea del archivo
+    public static Vehiculo desdeArchivo(String linea) {
+        String[] partes = linea.split("\\|");
+        if (partes.length != 5) {
+            throw new IllegalArgumentException("Línea de archivo inválida");
+        }
+        int id = Integer.parseInt(partes[0]);
+        String marca = partes[1];
+        String modelo = partes[2];
+        int anio = Integer.parseInt(partes[3]);
+        double precio = Double.parseDouble(partes[4]);
+
+        return new Vehiculo(id, marca, modelo, anio, precio);
+    }
 }

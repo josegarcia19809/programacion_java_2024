@@ -1,19 +1,69 @@
 package ArrayListRegistroVehiculos;
 
 import java.util.ArrayList;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.File;
+import java.util.Scanner;
+
 
 public class VehiculosOperaciones {
     ArrayList<Vehiculo> vehiculos = new ArrayList<>();
+    private String nombreArchivo;
 
     // Constructor
-    public VehiculosOperaciones() {
-        vehiculos.add(new Vehiculo(301, "Toyota", "Corolla", 2020, 220000.00));
-        vehiculos.add(new Vehiculo(302, "Honda", "Civic", 2019, 210000.00));
-        vehiculos.add(new Vehiculo(303, "Ford", "Mustang", 2021, 450000.00));
-        vehiculos.add(new Vehiculo(304, "Nissan", "Sentra", 2018, 180000.00));
-        vehiculos.add(new Vehiculo(305, "Chevrolet", "Onix", 2022, 230000.00));
-        vehiculos.add(new Vehiculo(306, "Mazda", "CX-5", 2021, 370000.00));
-        vehiculos.add(new Vehiculo(307, "Hyundai", "Elantra", 2020, 195000.00));
+    public VehiculosOperaciones(String nombreArchivo) {
+        this.nombreArchivo = nombreArchivo;
+        crearArchivoSiNoExiste(nombreArchivo);
+        cargarVehiculosDesdeArchivo();
+    }
+
+    public static void crearArchivoSiNoExiste(String nombreArchivo) {
+        File archivo = new File(nombreArchivo);
+        if (!archivo.exists()) {
+            try {
+                // Crear archivo vacío
+                PrintWriter nuevoArchivo = new PrintWriter(archivo);
+                nuevoArchivo.close();
+            } catch (IOException e) {
+                System.out.println("No se pudo crear el archivo");
+                System.exit(1);
+            }
+        }
+    }
+
+    public void cargarVehiculosDesdeArchivo() {
+        vehiculos.clear();
+        try {
+            File archivo = new File(nombreArchivo);
+            if (!archivo.exists()) {
+                return;
+            }
+            Scanner lector = new Scanner(archivo);
+            while (lector.hasNextLine()) {
+                String linea = lector.nextLine();
+                Vehiculo nuevoVehiculo = Vehiculo.desdeArchivo(linea);
+                vehiculos.add(nuevoVehiculo);
+            }
+        } catch (Exception e) {
+            System.out.println("Error al leer el archivo " +
+                    e.getMessage());
+        }
+    }
+
+    public void guardarVehiculosEnArchivo() {
+        try {
+            File archivo = new File(nombreArchivo);
+            PrintWriter escritor = new PrintWriter(archivo);
+
+            for (Vehiculo v : vehiculos) {
+                escritor.println(v.formatoArchivo());
+            }
+            escritor.close();
+        } catch (Exception e) {
+            System.out.println("Error al guardar en el archivo " +
+                    nombreArchivo);
+        }
     }
 
     public void ingresarVehiculo(Vehiculo nuevoVehiculo) {
@@ -39,7 +89,17 @@ public class VehiculosOperaciones {
         }
     }
 
-    public void mostrarVehiculos() {
+    public void mostrarTodosLosVehiculos() {
         mostrarVehiculos(vehiculos);
+    }
+
+    public void buscarVehiculosPorMarca(String marca) {
+        ArrayList<Vehiculo> listaPorMarca = new ArrayList<>();
+        for (int i = 0; i < vehiculos.size(); i++) {
+            if (vehiculos.get(i).getMarca().equals(marca)) {
+                listaPorMarca.add(vehiculos.get(i));
+            }
+        }
+        mostrarVehiculos(listaPorMarca);
     }
 }
