@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class VideojuegoPrueba {
     static Scanner entrada = new Scanner(System.in);
-    static VideojuegosOperaciones favoritos = new VideojuegosOperaciones();
+    static VideojuegosOperaciones favoritos =
+            new VideojuegosOperaciones("videojuegos.txt");
 
     public static void imprimirLinea() {
         System.out.println();
@@ -32,8 +33,8 @@ public class VideojuegoPrueba {
         String genero = entrada.nextLine();
 
         Videojuego nuevoJuego = new Videojuego(id, nombre, plataforma, anio, genero);
-
         favoritos.agregarVideojuego(nuevoJuego);
+        favoritos.guardarVideojuegoEnArchivo();
     }
 
     public static void menu() {
@@ -54,14 +55,16 @@ public class VideojuegoPrueba {
         do {
             menu();
             opcion = entrada.nextInt();
-            switch (opcion){
+            switch (opcion) {
                 case 1:
                     pedirDatos();
                     favoritos.mostrarTodosLosVideojuegos();
                     break;
-
                 case 2:
                     favoritos.mostrarTodosLosVideojuegos();
+                    break;
+                case 7:
+                    System.out.println("Saliendo");
                     break;
 
                 default:

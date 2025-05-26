@@ -64,4 +64,24 @@ public class Videojuego {
                 this.id, this.nombre, this.plataforma, this.anio, this.genero);
         return salida;
     }
+
+    // Método para guardar en archivo (separado por "|")
+    public String formatoArchivo() {
+        return id + "|" + nombre + "|" + plataforma + "|" + anio + "|" + genero;
+    }
+
+    // Método estático para crear un videojuego a partir de una línea del archivo
+    public static Videojuego desdeArchivo(String linea) {
+        String[] atributos = linea.split("\\|");
+        if (atributos.length != 5) {
+            throw new IllegalArgumentException("Línea de archivo inválida: " + linea);
+        }
+
+        int id = Integer.parseInt(atributos[0]);
+        String nombre = atributos[1];
+        String plataforma = atributos[2];
+        int anio = Integer.parseInt(atributos[3]);
+        String genero = atributos[4];
+        return new Videojuego(id, nombre, plataforma, anio, genero);
+    }
 }

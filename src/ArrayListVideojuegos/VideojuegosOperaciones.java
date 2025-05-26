@@ -1,20 +1,67 @@
 package ArrayListVideojuegos;
 
 import java.util.ArrayList;
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
 
 public class VideojuegosOperaciones {
     ArrayList<Videojuego> juegos = new ArrayList<>();
+    private String nombreArchivo;
 
     // Constructor
-    public VideojuegosOperaciones() {
-        juegos.add(new Videojuego(401, "The Legend of Zelda", "Nintendo", 2017, "Aventura"));
-        juegos.add(new Videojuego(402, "God of War", "PlayStation", 2018, "Acción"));
-        juegos.add(new Videojuego(403, "Minecraft", "Multiplataforma", 2011, "Sandbox"));
-        juegos.add(new Videojuego(404, "Animal Crossing", "Nintendo", 2020, "Simulación"));
-        juegos.add(new Videojuego(405, "Halo Infinite", "Xbox", 2021, "Disparos"));
-        juegos.add(new Videojuego(406, "Elden Ring", "Multiplataforma", 2022, "RPG"));
-        juegos.add(new Videojuego(407, "Spider-Man: Miles Morales", "PlayStation", 2020,
-                "Aventura"));
+    public VideojuegosOperaciones(String nombreArchivo) {
+        this.nombreArchivo = nombreArchivo;
+        crearArchivoSiNoExiste(nombreArchivo);
+        cargarVideojuegosDesdeArchivo();
+    }
+
+    private void crearArchivoSiNoExiste(String nombreArchivo) {
+        File archivo = new File(nombreArchivo);
+        if (!archivo.exists()) {
+            try {
+                // Crear archivo vacío
+                PrintWriter nuevoArchivo = new PrintWriter(archivo);
+                nuevoArchivo.close();
+            } catch (IOException e) {
+                System.err.println("No se pudo crear el archivo");
+                System.exit(1);
+            }
+        }
+    }
+
+    public void cargarVideojuegosDesdeArchivo() {
+        juegos.clear();
+        try {
+            File archivo = new File(nombreArchivo);
+            if (!archivo.exists()) {
+                return;
+            }
+            Scanner lector = new Scanner(archivo);
+            while (lector.hasNextLine()) {
+                String linea = lector.nextLine();
+                Videojuego nuevoJuego = Videojuego.desdeArchivo(linea);
+                juegos.add(nuevoJuego);
+            }
+        } catch (Exception e) {
+            System.out.println("Error al leer el archivo " + e.getMessage());
+        }
+    }
+
+    public void guardarVideojuegoEnArchivo() {
+        try {
+            File archivo = new File(nombreArchivo);
+            PrintWriter escritor = new PrintWriter(archivo);
+
+            for (Videojuego juego : juegos) {
+                escritor.println(juego.formatoArchivo());
+            }
+            escritor.close();
+
+        } catch (Exception e) {
+            System.out.println("Error al guardar el archivo: " + e.getMessage());
+        }
     }
 
     public void agregarVideojuego(Videojuego nuevoJuego) {
@@ -36,7 +83,7 @@ public class VideojuegosOperaciones {
         }
     }
 
-    public void mostrarTodosLosVideojuegos(){
+    public void mostrarTodosLosVideojuegos() {
         mostrarVideojuegos(juegos);
     }
 
