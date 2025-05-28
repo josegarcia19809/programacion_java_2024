@@ -50,6 +50,14 @@ public class VideojuegoPrueba {
         System.out.print("Elige tu opción: ");
     }
 
+    public static void buscarPorPlataforma() {
+        entrada.nextLine();
+        System.out.print("Dame nombre de plataforma: ");
+        String plataforma = entrada.nextLine();
+
+        favoritos.buscarPorPlataforma(plataforma);
+    }
+
     public static void main(String[] args) {
         int opcion;
         do {
@@ -62,6 +70,9 @@ public class VideojuegoPrueba {
                     break;
                 case 2:
                     favoritos.mostrarTodosLosVideojuegos();
+                    break;
+                case 3:
+                    buscarPorPlataforma();
                     break;
                 case 7:
                     System.out.println("Saliendo");

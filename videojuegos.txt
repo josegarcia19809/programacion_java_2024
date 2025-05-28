@@ -1,2 +1,3 @@
 401|The Legend of Zelda|Nintendo|2017|Aventura
 402|God of War|PlayStation|2018|Acción
+403|Minecraft|Multiplataforma|2011|Sandbox

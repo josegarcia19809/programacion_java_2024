@@ -87,4 +87,14 @@ public class VideojuegosOperaciones {
         mostrarVideojuegos(juegos);
     }
 
+    public void buscarPorPlataforma(String plataforma) {
+        ArrayList<Videojuego> listaPlataforma = new ArrayList<>();
+        for (int i = 0; i < juegos.size(); i++) {
+            if (juegos.get(i).getPlataforma().equals(plataforma)) {
+                listaPlataforma.add(juegos.get(i));
+            }
+        }
+        mostrarVideojuegos(listaPlataforma);
+    }
+
 }
