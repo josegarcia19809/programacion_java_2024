@@ -1,4 +1,4 @@
-package p10_herencia;
+package p10_herencia.inventarioProductos;
 
 public class Producto {
     private String nombre;

@@ -1,0 +1,29 @@
+@startuml
+
+class Producto {
+    - nombre : String
+    - precio : double
+    - cantidad : int
+
+    + Producto(nombre : String, precio : double, cantidad : int)
+    + getNombre() : String
+    + setNombre(nombre : String) : void
+    + getPrecio() : double
+    + setPrecio(precio : double) : void
+    + getCantidad() : int
+    + setCantidad(cantidad : int) : void
+    + toString() : String
+}
+
+class ProductoMenudeo {
+    - porcentajeAumento : int
+
+    + ProductoMenudeo(nombre : String, precio : double, cantidad : int, porcentajeAumento : int)
+    + getPorcentajeAumento() : int
+    + setPorcentajeAumento(porcentajeAumento : int) : void
+    + toString() : String
+}
+
+ProductoMenudeo --|> Producto
+
+@enduml
