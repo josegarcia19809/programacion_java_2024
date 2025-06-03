@@ -1,0 +1,31 @@
+@startuml
+class Plato {
+    - nombre: String
+    - precioBase: double
+    + Plato(nombre: String, precioBase: double)
+    + getNombre(): String
+    + calcularPrecioFinal(): double
+}
+
+class Entrada {
+    - cargoServicio: double
+    + Entrada(nombre: String, precioBase: double, cargoServicio: double)
+    + calcularPrecioFinal(): double
+}
+
+class PlatoPrincipal {
+    - cargoIngredientesExtra: double
+    + PlatoPrincipal(nombre: String, precioBase: double, cargoIngredientesExtra: double)
+    + calcularPrecioFinal(): double
+}
+
+class Postre {
+    - costoPreparacion: double
+    + Postre(nombre: String, precioBase: double, costoPreparacion: double)
+    + calcularPrecioFinal(): double
+}
+
+Entrada --|> Plato
+PlatoPrincipal --|> Plato
+Postre --|> Plato
+@enduml
