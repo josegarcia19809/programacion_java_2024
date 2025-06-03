@@ -1,0 +1,45 @@
+@startuml
+abstract class Empleado {
+    - String nombre
+    - double salarioBase
+    + double calcularSalario()
+    + String toString()
+}
+
+class EmpleadoBase {
+    + double calcularSalario()
+    + String toString()
+}
+
+class EmpleadoEjecutivo {
+    - double bono
+    + double calcularSalario()
+    + String toString()
+}
+
+class EmpleadoPorHoras {
+    - int horasTrabajadas
+    - double tarifaPorHora
+    + double calcularSalario()
+    + String toString()
+}
+
+class EmpleadoComision {
+    - double ventas
+    - double porcentajeComision
+    + double calcularSalario()
+    + String toString()
+}
+
+class EmpleadoTemporal {
+    - boolean contratoCumplido
+    + double calcularSalario()
+    + String toString()
+}
+
+Empleado <|-- EmpleadoBase
+Empleado <|-- EmpleadoEjecutivo
+Empleado <|-- EmpleadoPorHoras
+Empleado <|-- EmpleadoComision
+Empleado <|-- EmpleadoTemporal
+@enduml
