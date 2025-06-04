@@ -37,6 +37,12 @@ public class PacientesPrueba {
         System.out.println("-".repeat(100));
     }
 
+    public static void mostrarPacientesPorEspecie() {
+        entrada.nextLine();
+        System.out.print("Dame especie a buscar: ");
+        String especie = entrada.nextLine();
+        veterinaria.buscarPacientesPorEspecie(especie);
+    }
 
     public static void main(String[] args) {
         veterinaria.mostrarTodosLosPacientes();
@@ -51,6 +57,9 @@ public class PacientesPrueba {
                     break;
                 case 2:
                     veterinaria.mostrarTodosLosPacientes();
+                    break;
+                case 3:
+                    mostrarPacientesPorEspecie();
                     break;
                 case 6:
                     System.out.println("Saliendo...");
