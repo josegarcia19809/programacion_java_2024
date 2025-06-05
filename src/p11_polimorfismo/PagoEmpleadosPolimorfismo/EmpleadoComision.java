@@ -18,9 +18,11 @@ public class EmpleadoComision extends Empleado {
 
     @Override
     public String toString() {
-        return "Nombre: " + nombre + ", Cargo: Empleado por Comisión, Ventas: $" + ventas +
-                ", Comisión: " + (porcentajeComision * 100) + "%, Salario total: $" +
-                calcularSalario();
+        return String.format(
+                "Nombre: %s, Cargo: Empleado por Comisión, Ventas: $%.2f, Comisión: %.2f%%, Salario total: $%.2f",
+                nombre, ventas, porcentajeComision * 100, calcularSalario()
+        );
     }
+
 }
 
