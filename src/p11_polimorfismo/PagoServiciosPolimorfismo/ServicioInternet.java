@@ -12,7 +12,7 @@ public class ServicioInternet extends Servicio {
 
     @Override
     public double calcularPago() {
-        double porcentajeAumento = 15 / 100.00;
+        double porcentajeAumento = (datosConsumidosGb/80.00) / 100.00;
         return (datosConsumidosGb * tarifaPorGb) +
                 (datosConsumidosGb * tarifaPorGb) * porcentajeAumento;
     }
@@ -21,7 +21,7 @@ public class ServicioInternet extends Servicio {
     public String toString() {
         return super.toString() +
                 ", consumo: " + datosConsumidosGb + " GB" +
-                ", tarifa: " + tarifaPorGb + " $/GB" +
+                ", tarifa: " +String.format("%.2f", tarifaPorGb)  + " $/GB" +
                 ", pago: $" + String.format("%.2f", calcularPago());
     }
 }
