@@ -2,6 +2,52 @@ package p11_polimorfismo.FacturacionRestaurante;
 
 public class RestauranteGrupo {
     public static void main(String[] args) {
+
+        String[] nombres = {
+                "A.R.V.",
+                "A.R.K.",
+                "B.L.K.",
+                "B.P.V.",
+                "C.D.J.",
+                "C.V.A.",
+                "C.C.D.A.",
+                "C.C.L.A.",
+                "D.J.D.J.L.A.",
+                "D.E.G.",
+                "F.P.M.M.",
+                "F.E.M.",
+                "F.A.C.",
+                "F.R.E.N.",
+                "G.C.I.",
+                "G.G.Y.",
+                "G.S.L.N.",
+                "G.V.D.",
+                "H.E.V.",
+                "H.R.H.M.",
+                "I.M.H.",
+                "L.A.E.",
+                "L.F.R.",
+                "M.D.L.C.J.C.",
+                "M.M.J.C.",
+                "M.M.C.",
+                "M.C.C.",
+                "M.A.E.",
+                "M.R.M.A.",
+                "O.F.A.L.",
+                "P.S.R.",
+                "R.Q.M.D.L.A.",
+                "R.G.L.",
+                "S.L.J.A.",
+                "S.L.R.",
+                "S.L.B.K.",
+                "T.G.A.",
+                "U.D.J.F.M.",
+                "V.P.D.E.",
+                "V.S.C.Y.",
+                "V.S.J.F."
+        };
+
+
         Plato entrada1 = new Entrada("Ensalada", 5.0, 2.0);
         Plato entrada2 = new Entrada("Sopa de verduras", 4.0, 1.0);
         Plato entrada3 = new Entrada("Pan de ajo", 3.0, 0.50);
@@ -32,9 +78,10 @@ public class RestauranteGrupo {
                 postre2.calcularPrecioFinal();
 
         Plato platoPrincipal1;
-        for (int noLista = 1; noLista <= 42; noLista++) {
+        for (int noLista = 1; noLista <= 41; noLista++) {
             System.out.println();
-            System.out.println("---------------------------------" + noLista);
+            System.out.println("---------------------------------" + noLista+
+                    " ----"+ nombres[noLista-1]);
             double precioBase = noLista * 80;
 
             platoPrincipal1 = new PlatoPrincipal("Filete de res", precioBase,
