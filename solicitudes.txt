@@ -1,0 +1,8 @@
+José Luis García, Programador Web, Mobile Developer, 12
+José Luis García, Programador Web, Scrum Master, 13
+José Luis García, Programador Web, Dev Android, 14
+José Luis García, Programador Web, Scrum Master, 40
+Leticia Romero, Diseñador Web, Scrum Master, 40
+Leticia Romero, Diseñador Web, Diseñador Gráfico, 20
+Leticia Romero, Diseñador Web, Especialista Cloud, 21
+Leticia Romero, Diseñador Web, Tester Manual, 22

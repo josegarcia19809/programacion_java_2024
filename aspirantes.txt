@@ -1,0 +1,2 @@
+1|José Luis García|josegarcia1@gmail.com|123|Programador Web
+2|Leticia Romero|lety@gmail.com|234|Diseñador Web

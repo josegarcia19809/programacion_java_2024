@@ -8,10 +8,11 @@ public class Vacante {
     private String ubicacion;
     private String tipoTrabajo;
     private double salario;
+    private int idEmpleador; // Nuevo campo
 
-    // Constructor
+    // Constructor actualizado
     public Vacante(int id, String titulo, String descripcion, String requisitos,
-                   String ubicacion, String tipoTrabajo, double salario) {
+                   String ubicacion, String tipoTrabajo, double salario, int idEmpleador) {
         this.id = id;
         this.titulo = titulo;
         this.descripcion = descripcion;
@@ -19,9 +20,10 @@ public class Vacante {
         this.ubicacion = ubicacion;
         this.tipoTrabajo = tipoTrabajo;
         this.salario = salario;
+        this.idEmpleador = idEmpleador;
     }
 
-    // métodos set y get
+    // Métodos set y get
     public int getId() {
         return this.id;
     }
@@ -78,12 +80,24 @@ public class Vacante {
         this.salario = salario;
     }
 
+    public int getIdEmpleador() {
+        return idEmpleador;
+    }
+
+    public void setIdEmpleador(int idEmpleador) {
+        this.idEmpleador = idEmpleador;
+    }
+
     @Override
     public String toString() {
-        String salida = String.format("%4d %25s %30s %25s %20s %20s %12.2f",
-                this.id, this.titulo, this.descripcion,
-                this.requisitos.substring(0, 18) + "...",
-                this.ubicacion, this.tipoTrabajo, this.salario);
+        String descripcionX = this.descripcion.length() > 25 ?
+                this.descripcion.substring(0, 25) + "..." : this.descripcion;
+        String requisitosX = this.requisitos.length() > 18 ?
+                this.requisitos.substring(0, 18) + "..." : this.requisitos;
+        String salida = String.format("%4d %25s %30s %25s %20s %20s %12.2f %10d",
+                this.id, this.titulo,
+                descripcionX, requisitosX,
+                this.ubicacion, this.tipoTrabajo, this.salario, this.idEmpleador);
         return salida;
     }
 }

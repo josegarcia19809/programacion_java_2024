@@ -1,0 +1,5 @@
+1|José García|jose@gmail.com|123|Microsoft
+2|Rox Sánchez|rox@gmail.com|234|Google
+3|Carolina G|carolina@gmail.com|pass123|Facebook
+4|Luis Torres|luis@gmail.com|luis321|Amazon
+5|Elena Rivas|elena@gmail.com|clave456|Netflix

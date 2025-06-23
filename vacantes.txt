@@ -1,0 +1,41 @@
+1|Desarrollador Java|Desarrollo backend en Java|Java, Spring Boot, MySQL|CDMX|Presencial|18000.00|3
+2|Tester QA|Pruebas funcionales|JUnit, Selenium, Postman|CDMX|Remoto|15000.00|4
+3|Administrador de Sistemas|Mantenimiento de servidores|Linux, Bash, Seguridad|CDMX|Presencial|17000.00|5
+4|Analista de Datos|Procesamiento de datos|SQL, Power BI|CDMX|Presencial|20000.00|2
+5|Desarrollador Frontend|Interfaz web|HTML, CSS, JS, React|CDMX|Remoto|18500.00|1
+6|Soporte Técnico|Atención al cliente|Redes, Hardware, Office|CDMX|Presencial|14000.00|3
+7|DevOps|Integración continua|Docker, Jenkins, AWS|CDMX|Remoto|22000.00|1
+8|Administrador de BD|Gestión de bases de datos|MySQL, PostgreSQL|CDMX|Híbrido|19000.00|4
+9|Diseñador UX|Diseño centrado en usuario|Figma, Prototipado|GDL|Remoto|17000.00|2
+10|Backend Node.js|Servicios backend|Node, Express, MongoDB|GDL|Presencial|19500.00|5
+11|QA Automation|Pruebas automatizadas|Cypress, Selenium|GDL|Híbrido|16000.00|1
+12|Mobile Developer|Apps móviles|Flutter, Android|GDL|Remoto|21000.00|2
+13|Scrum Master|Gestión ágil|Scrum, Jira|GDL|Híbrido|23000.00|3
+14|Dev Android|Apps nativas|Kotlin, Jetpack|GDL|Remoto|20000.00|5
+15|Diseñador Web|Diseño y maquetación|HTML, CSS, UI|GDL|Presencial|15000.00|4
+16|Administrador de Redes|Infraestructura|Routing, Switching|GDL|Presencial|18000.00|1
+17|Data Engineer|ETL y Big Data|Python, Spark, SQL|MTY|Remoto|24000.00|4
+18|Project Manager|Liderazgo de proyectos|Kanban, Trello|MTY|Híbrido|25000.00|2
+19|Dev FullStack|Frontend + Backend|React, Node.js|MTY|Remoto|23000.00|5
+20|Diseñador Gráfico|Material visual|Photoshop, Illustrator|MTY|Presencial|16000.00|1
+21|Especialista Cloud|Servicios cloud|AWS, Azure|MTY|Remoto|26000.00|3
+22|Tester Manual|Pruebas funcionales|Casos de prueba, Reportes|MTY|Presencial|15000.00|5
+23|SysAdmin|Servidores y redes|Linux, Virtualización|MTY|Híbrido|19000.00|3
+24|Dev iOS|Apps Apple|Swift, Xcode|MTY|Remoto|21000.00|2
+25|Líder Técnico|Supervisión técnica|Arquitectura, Revisión|PUE|Remoto|27000.00|5
+26|Administrador de BD|Gestión de datos|MySQL, PostgreSQL|PUE|Presencial|20000.00|1
+27|Soporte Aplicaciones|Ayuda técnica|ERP, CRM, SQL|PUE|Remoto|16000.00|3
+28|Diseñador UI|Interfaz de usuario|Sketch, UI Kits|PUE|Híbrido|17000.00|2
+29|Backend PHP|Desarrollo web|PHP, Laravel, MySQL|PUE|Remoto|19000.00|4
+30|Dev Ruby|Aplicaciones web|Ruby, Rails, PostgreSQL|PUE|Presencial|20000.00|5
+31|Técnico HelpDesk|Soporte primer nivel|Tickets, Windows|PUE|Presencial|14000.00|2
+32|Frontend Angular|Interfaz dinámica|Angular, TypeScript|PUE|Remoto|18500.00|1
+33|Backend Go|APIs rápidas|Go, Gin, PostgreSQL|LEÓN|Remoto|22000.00|3
+34|UX Researcher|Investigación de usuario|Entrevistas, Testeo|LEÓN|Híbrido|16000.00|4
+35|FullStack .NET|Sistema interno|C#, ASP.NET, SQL|LEÓN|Presencial|21000.00|1
+36|QA Lead|Gestión de QA|Casos, Automatización|LEÓN|Remoto|20000.00|5
+37|Tester Junior|Validación básica|Manual, Reporte bugs|LEÓN|Presencial|14500.00|3
+38|Diseñador UI|Aplicaciones móviles|Figma, Adobe XD|LEÓN|Remoto|17000.00|2
+39|Dev Backend|Sistemas internos|Java, Hibernate|LEÓN|Presencial|20000.00|1
+40|Scrum Master|Metodología ágil|Daily, Review, Retro|LEÓN|Remoto|24000.00|4
+41|Generador de prompts|Generar prompts en ChatGPT|Java|San Felipe P|Remoto|10000.00|4
