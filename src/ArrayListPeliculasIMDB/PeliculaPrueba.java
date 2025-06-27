@@ -62,6 +62,8 @@ public class PeliculaPrueba {
         mostrarPeliculas(filtradas);
     }
 
+
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         crearArchivoSiNoExiste();

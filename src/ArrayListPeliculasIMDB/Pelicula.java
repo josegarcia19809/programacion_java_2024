@@ -37,6 +37,25 @@ public class Pelicula {
         return genero;
     }
 
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public int getAnio() {
+        return anio;
+    }
+
+    public void setAnio(int anio) {
+        this.anio = anio;
+    }
+
+    public double getCalificacionImdb() {
+        return calificacionImdb;
+    }
+
+    public void setCalificacionImdb(double calificacionImdb) {
+        this.calificacionImdb = calificacionImdb;
+    }
 
     @Override
     public String toString() {
