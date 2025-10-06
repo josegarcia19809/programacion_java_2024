@@ -1,7 +1,5 @@
 package p00_fundamentos;
 
-/*crear 6 métodos. Cada método imprimirá
- * el nombre de una carrera*/
 public class Carreras {
 
     public static void mostrarCarreraIngenieria() {
@@ -24,9 +22,12 @@ public class Carreras {
         System.out.println("- Lic. en Informática Administrativa 🖥️");
     }
 
+    public static void mostrarCarreraAdministracion() {
+        System.out.println("- Lic. en Administración 📉");
+    }
+
     public static void main(String[] args) {
-        System.out.println("Las carreras que ofrece el " +
-                "Centro Universitario UAEM Atlacomulco");
+        System.out.println("Las carreras que ofrece el Centro Universitario UAEM Atlacomulco");
         mostrarCarreraIngenieria();
         mostrarCarreraContador();
         mostrarCarreraDerecho();
