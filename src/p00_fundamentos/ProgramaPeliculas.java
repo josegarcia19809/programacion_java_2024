@@ -4,7 +4,10 @@ import java.util.Scanner;
 
 public class ProgramaPeliculas {
     public static void mostrarPelicula(String pelicula, int calificacion, int anioEstreno) {
-        String mensaje = "";
+
+        System.out.println("🎥Película: " + pelicula);
+        System.out.println("📆Año de estreno: " + anioEstreno);
+
         if (calificacion >= 9) {
             System.out.println("🎉 Una obra maestra, no te la puedes perder 👍🏼");
         } else if (calificacion >= 7) {
@@ -15,8 +18,6 @@ public class ProgramaPeliculas {
             System.out.println("😥 Mmm... quizás te guste otra opción.");
         }
 
-        System.out.println("🎥Película: " + pelicula);
-        System.out.println("📆Año de estreno: " + anioEstreno);
     }
 
     public static void main(String[] args) {
