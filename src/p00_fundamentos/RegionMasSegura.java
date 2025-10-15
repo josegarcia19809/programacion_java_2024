@@ -8,13 +8,15 @@ public class RegionMasSegura {
     public static int obtenerNumAccidentes(String nombreRegion) {
         int accidentes = -1;
         while (accidentes < 0) {
-            System.out.print("Dame número de accidentes de la región " + nombreRegion + ": ");
+            System.out.print("Dame número de accidentes de la región " +
+                    nombreRegion + ": ");
             accidentes = entrada.nextInt();
         }
         return accidentes;
     }
 
-    public static void encontrarMenor(int norte, int sur, int este, int oeste, int central) {
+    public static void encontrarMenor(int norte, int sur, int este, int oeste,
+                                      int central) {
         String regionMasSegura = "Norte";
         int cantidadMenorAccidentes = norte;
 
@@ -37,10 +39,8 @@ public class RegionMasSegura {
             cantidadMenorAccidentes = central;
         }
 
-        System.out.println("Región más segura: " +
-                regionMasSegura);
-        System.out.println("Número de accidentes: " +
-                cantidadMenorAccidentes);
+        System.out.println("Región más segura: " + regionMasSegura);
+        System.out.println("Número de accidentes: " + cantidadMenorAccidentes);
 
     }
 

@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class TiendaRopa {
 
-    public static double calcularPrecioConDescuento(double precioOriginal, double porcentajeDescuento) {
+    public static double calcularPrecioConDescuento(double precioOriginal,
+                                                    double porcentajeDescuento) {
         double descuento = precioOriginal * (porcentajeDescuento / 100.0);
         double precioConDescuento = precioOriginal - descuento;
         return precioConDescuento;
@@ -20,8 +21,10 @@ public class TiendaRopa {
         System.out.print("Dame el porcentaje de descuento: ");
         double porcentajeADescontar = entrada.nextDouble();
 
-        double precioFinalPrenda = calcularPrecioConDescuento(precioPrenda, porcentajeADescontar);
+        double precioFinalPrenda = calcularPrecioConDescuento(precioPrenda,
+                porcentajeADescontar);
 
-        System.out.printf("💲El precio de la prenda con descuento es de $%.2f", precioFinalPrenda);
+        System.out.printf("💲El precio de la prenda con descuento es de $%.2f",
+                precioFinalPrenda);
     }
 }
