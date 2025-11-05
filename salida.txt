@@ -1,1 +1,30 @@
-Hola, mundo
+El Origen;Christopher Nolan;2010;148;Un ladrón roba secretos del subconsciente mediante sueños compartidos.;Inglés
+Titanic;James Cameron;1997;195;Una historia de amor trágica durante el hundimiento del Titanic.;Inglés
+Parásitos;Bong Joon-ho;2019;132;Una familia pobre se infiltra en la vida de una familia rica.;Coreano
+Coco;Lee Unkrich;2017;105;Un niño viaja al mundo de los muertos para conocer su legado familiar.;Español
+Avatar;James Cameron;2009;162;Un exmarine explora un mundo alienígena y se une a su gente.;Inglés
+El Padrino;Francis Ford Coppola;1972;175;La historia de una poderosa familia mafiosa en Nueva York.;Inglés
+Interestelar;Christopher Nolan;2014;169;Exploradores viajan a través de un agujero de gusano en busca de un nuevo hogar.;Inglés
+Amélie;Jean-Pierre Jeunet;2001;122;Una joven busca hacer felices a los demás en París.;Francés
+Gladiador;Ridley Scott;2000;155;Un general romano busca venganza contra el emperador corrupto.;Inglés
+Up;Pete Docter;2009;96;Un anciano viaja a Sudamérica con su casa flotante para cumplir un sueño.;Inglés
+El Laberinto del Fauno;Guillermo del Toro;2006;118;Una niña escapa a un mundo mágico en la posguerra española.;Español
+Toy Story;John Lasseter;1995;81;Los juguetes cobran vida cuando los humanos no los ven.;Inglés
+Matrix;Lana Wachowski y Lilly Wachowski;1999;136;Un hacker descubre la verdad sobre la realidad simulada en la que vive.;Inglés
+Forrest Gump;Robert Zemeckis;1994;142;Un hombre con un gran corazón participa en eventos históricos de EE.UU.;Inglés
+La La Land;Damien Chazelle;2016;128;Un músico y una actriz luchan por sus sueños en Los Ángeles.;Inglés
+Joker;Todd Phillips;2019;122;Un hombre marginado se convierte en el símbolo del caos en Gotham.;Inglés
+Pulp Fiction;Quentin Tarantino;1994;154;Historias entrelazadas de crimen y redención en Los Ángeles.;Inglés
+Los Increíbles;Brad Bird;2004;115;Una familia de superhéroes intenta llevar una vida normal.;Inglés
+El Viaje de Chihiro;Hayao Miyazaki;2001;125;Una niña entra en un mundo de espíritus para salvar a sus padres.;Japonés
+Shrek;Andrew Adamson;2001;90;Un ogro parte en una misión para rescatar a una princesa.;Inglés
+En busca de la felicidad;Gabriele Muccino;2006;117;Un padre lucha por darle un futuro mejor a su hijo.;Inglés
+La forma del agua;Guillermo del Toro;2017;123;Una mujer se enamora de una criatura marina en un laboratorio secreto.;Inglés
+Avengers: Endgame;Anthony y Joe Russo;2019;181;Los Vengadores enfrentan su batalla final contra Thanos.;Inglés
+Frozen;Chris Buck y Jennifer Lee;2013;102;Dos hermanas descubren el poder del amor en un reino helado.;Inglés
+El Gran Hotel Budapest;Wes Anderson;2014;99;Las aventuras de un conserje en un lujoso hotel europeo.;Inglés
+Ratatouille;Brad Bird;2007;111;Una rata sueña con ser chef en un prestigioso restaurante de París.;Inglés
+Los Juegos del Hambre;Gary Ross;2012;142;Una joven lucha por sobrevivir en un mortal concurso televisado.;Inglés
+Spirited Away;Hayao Miyazaki;2001;125;Una niña entra en un mundo espiritual lleno de criaturas mágicas.;Japonés
+El Rey León;Roger Allers y Rob Minkoff;1994;88;Un león joven debe reclamar su lugar como rey de la sabana.;Inglés
+Soul;Pete Docter;2020;100;Un músico busca el verdadero significado de la vida después de la muerte.;Inglés
