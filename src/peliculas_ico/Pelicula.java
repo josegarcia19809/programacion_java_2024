@@ -1,4 +1,4 @@
-package peliculas;
+package peliculas_ico;
 
 public class Pelicula {
     private int id;

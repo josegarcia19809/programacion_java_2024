@@ -1,4 +1,4 @@
-package peliculas;
+package peliculas_ico;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package peliculas;
+package peliculas_ico;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,0 +1,30 @@
+Título,Director,Año de lanzamiento,Duración,Género,Calificación
+Casablanca,Michael Curtiz,1942,102,Romance,8.5
+El Padrino Parte II,Francis Ford Coppola,1974,202,Crimen,9.0
+Blade Runner,Ridley Scott,1982,117,Ciencia Ficción,8.1
+Cuando Harry encontró a Sally,Rob Reiner,1989,96,Romance,7.6
+Ghost,Jerry Zucker,1990,127,Romance,7.1
+Antes del Amanecer,Richard Linklater,1995,101,Romance,8.1
+Titanic,James Cameron,1997,194,Romance,7.9
+El Show de Truman,Peter Weir,1998,103,Comedia,8.2
+Requiem por un Sueño,Darren Aronofsky,2000,102,Drama,8.3
+Amelie,Jean-Pierre Jeunet,2001,122,Romance,8.3
+El Viaje de Chihiro,Hayao Miyazaki,2001,125,Animación,8.6
+Big Fish,Tim Burton,2003,125,Fantasía,8.0
+Diario de una Pasión,Nick Cassavetes,2004,123,Romance,7.8
+El Secreto de Brokeback Mountain,Ang Lee,2005,134,Drama,7.7
+Hijos de los Hombres,Alfonso Cuarón,2006,109,Ciencia Ficción,7.9
+El Laberinto del Fauno,Guillermo del Toro,2006,118,Fantasía,8.2
+Wall-E,Andrew Stanton,2008,98,Animación,8.4
+El Curioso Caso de Benjamin Button,David Fincher,2008,166,Fantasía,7.8
+Up,Pete Docter,2009,96,Animación,8.2
+Cisne Negro,Darren Aronofsky,2010,108,Suspense,8.0
+El Discurso del Rey,Tom Hooper,2010,118,Biografía,8.0
+El Gran Hotel Budapest,Wes Anderson,2014,99,Comedia,8.1
+Perdida,David Fincher,2014,149,Misterio,8.1
+Whiplash,Damien Chazelle,2014,106,Drama,8.5
+La La Land,Damien Chazelle,2016,128,Musical,8.0
+Zootopia,Byron Howard,2016,108,Animación,8.0
+La Forma del Agua,Guillermo del Toro,2017,119,Fantasía,7.3
+Call Me by Your Name,Luca Guadagnino,2017,132,Romance,7.9
+Coco,Lee Unkrich,2017,105,Animación,8.4
