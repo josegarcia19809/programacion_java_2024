@@ -10,6 +10,9 @@ public class RepasoIco2025 {
 
             imprimirLinea();
             pruebaCargosGamer(noLista);
+            System.out.println();
+            System.out.println();
+            System.out.println();
         }
     }
 
@@ -18,15 +21,16 @@ public class RepasoIco2025 {
         int noRebanadas = noLista * noLista;
         int rebanadasExtra = noLista + 3;
         int totalRebanadas = noRebanadas + rebanadasExtra * 3;
+        System.out.println(totalRebanadas);
 
         int porcionesPorPizza = 8;
         int caloriasPorPorcion = 250;
 
         int caloriasPorPizza = porcionesPorPizza * caloriasPorPorcion;
-        int caloriasPorRebanada = caloriasPorPizza / totalRebanadas;
+        double caloriasPorRebanada = (double) caloriasPorPizza / totalRebanadas;
 
         int rebanadasConsumidas = noRebanadas + 4;
-        int caloriasConsumidas = caloriasPorRebanada * rebanadasConsumidas;
+        double caloriasConsumidas = (caloriasPorRebanada * rebanadasConsumidas);
 
         System.out.println("Calorías por rebanada: " + caloriasPorRebanada);
         System.out.println("Rebanadas consumidas: " + rebanadasConsumidas);
