@@ -1,4 +1,4 @@
-package p00_fundamentos;
+package p01_arreglos;
 
 public class ArrayMeses {
     public static void main(String[] args) {

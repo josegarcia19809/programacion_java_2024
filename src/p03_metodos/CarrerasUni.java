@@ -1,6 +1,6 @@
-package p00_fundamentos;
+package p03_metodos;
 
-public class Carreras {
+public class CarrerasUni {
 
     public static void mostrarCarreraIngenieria() {
         System.out.println("- Ingeniería en Computación 💻");

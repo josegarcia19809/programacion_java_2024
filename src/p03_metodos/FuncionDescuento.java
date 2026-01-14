@@ -1,4 +1,4 @@
-package p00_fundamentos;
+package p03_metodos;
 
 public class FuncionDescuento {
     public static void calcularDescuento(double precio, int porcentajeDescuento) {

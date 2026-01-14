@@ -1,4 +1,4 @@
-package p00_fundamentos;
+package p08_objetos;
 
 class CuentaAhorro {
     private double balance;

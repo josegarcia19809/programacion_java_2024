@@ -1,4 +1,4 @@
-package p00_fundamentos;
+package p03_metodos;
 
 public class FuncionSumar {
     public static void sumar(double numero1, double numero2) {

@@ -1,4 +1,4 @@
-package p00_fundamentos;
+package p01_arreglos;
 
 import java.util.Scanner;
 
